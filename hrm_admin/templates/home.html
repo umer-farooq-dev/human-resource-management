@@ -3,4 +3,19 @@
 
 {% block content %}
 
+<div class="content container-fluid">
+    <p>
+        <a href="{% url 'organization' %}" class="btn btn-info" role="button">Organization</a>
+        <a href="{% url 'business' %}" class="btn btn-secondary" role="button">Business & Srategy</a>
+        <a href="{% url 'organization' %}" class="btn btn-success" role="button">HR Self-Service|Pay|Benifits|career</a>
+        <a href="{% url 'organization' %}" class="btn btn-danger" role="button">Tech Services</a>
+        <a href="{% url 'organization' %}" class="btn btn-warning" role="button">Ethics,Safety & Security</a>
+        <a href="{% url 'organization' %}" class="btn btn-info" role="button">Leadership Hub</a>
+      
+        </p>
+
+    <img src="{% static 'img/dash.png' %}" width="1020" height="500" alt="">
+
+</div>
+
 {% endblock %}
