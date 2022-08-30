@@ -7,12 +7,25 @@
     <p>
         <a href="{% url 'organization' %}" class="btn btn-info" role="button">Organization</a>
         <a href="{% url 'business' %}" class="btn btn-secondary" role="button">Business & Srategy</a>
-        <a href="{% url 'organization' %}" class="btn btn-success" role="button">HR Self-Service|Pay|Benifits|career</a>
-        <a href="{% url 'organization' %}" class="btn btn-danger" role="button">Tech Services</a>
-        <a href="{% url 'organization' %}" class="btn btn-warning" role="button">Ethics,Safety & Security</a>
-        <a href="{% url 'organization' %}" class="btn btn-info" role="button">Leadership Hub</a>
-      
-        </p>
+        <a href="S" class="btn btn-success" role="button">HR Self-Service|Pay|Benifits|career</a>
+        <a href="{% url 'tech-service' %}" class="btn btn-danger" role="button">Tech Services</a>
+        <a href="{% url 'ethics-security' %}" class="btn btn-warning" role="button">Ethics,Safety & Security</a>
+        <a href="{% url 'leadership' %}" class="btn btn-info" role="button">Leadership Hub</a>
+    </p>
+    <div class="btn-group">
+        <a href="{% url 'human-resource' %}" class="btn btn-success" role="button">Human Resources</a>
+        <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        
+        </button>
+        <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Overview</a>
+        <a class="dropdown-item" href="#">HR Self-Service</a>
+        <a class="dropdown-item" href="#">Manager & HR Staff</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">HR Analytics</a>
+        <a class="dropdown-item" href="#">HR Business System</a>
+        </div>
+        </div>
 
     <img src="{% static 'img/dash.png' %}" width="1020" height="500" alt="">
 

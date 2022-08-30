@@ -23,13 +23,21 @@
 
     <link rel="stylesheet" href="{% static 'plugins/morris/morris.css' %}">
 
+    <link rel="stylesheet" href="{% static 'css/select2.min.css' %}">
+
+        <link rel="stylesheet" href="{% static 'css/bootstrap-datetimepicker.min.css' %}">
+
+        <link rel="stylesheet" href="{% static 'plugins/bootstrap-tagsinput/bootstrap-tagsinput.css' %}">
+
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'css/style2.css' %}">
 
     {#    [if lt IE 9]#}
     {#                <script src="{% static 'js/html5shiv.min.js' %}"></script>#}
     {#                <script src="{% static 'js/respond.min.js' %}"></script>#}
     {#            [endif]#}
+{% block custom_css %}
+
+{% endblock custom_css %}
 </head>
 <body>
 
@@ -62,7 +70,15 @@
 <script src="{% static 'plugins/morris/morris.min.js' %}"></script>
 <script src="{% static 'plugins/raphael/raphael.min.js' %}"></script>
 <script src="{% static 'js/chart.js' %}"></script>
+<script src="{% static 'js/moment.min.js' %}"></script>
+<script src="{% static 'js/bootstrap-datetimepicker.min.js' %}"></script>
 
+<script src="{% static 'plugins/bootstrap-tagsinput/bootstrap-tagsinput.min.js' %}"></script>
+<script src="{% static 'plugins/sticky-kit-master/dist/sticky-kit.min.js' %}"></script>
 <script src="{% static 'js/app.js' %}"></script>
+
+{% block custom_js %}
+
+{% endblock custom_js %}
 </body>
 </html>
