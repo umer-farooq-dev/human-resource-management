@@ -41,3 +41,27 @@ def ethics_security(request):
 
 def leadership(request):
     return render(request=request, template_name="leadership.html")
+
+
+def employees_dashboard(request):
+    return render(request=request, template_name="Employee/dashboard.html")
+
+
+def all_employees(request):
+    return render(request=request, template_name="Employee/all_employees.html")
+
+
+def employees_list(request):
+    return render(request=request, template_name="Employee/employee_list.html")
+
+
+def employee_profile(request):
+    return render(request=request, template_name="Employee/employee_profile.html")
+
+
+def employee_holidays(request):
+    return render(request=request, template_name="Employee/holidays.html")
+
+
+def employee_leave(request):
+    return render(request=request, template_name="Employee/employee_leaves.html")
