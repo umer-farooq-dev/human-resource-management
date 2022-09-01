@@ -65,3 +65,20 @@ def employee_holidays(request):
 
 def employee_leave(request):
     return render(request=request, template_name="Employee/employee_leaves.html")
+
+
+def employee_login(request):
+    return render(request=request, template_name="Employee/login.html")
+
+
+def employee_attendance(request):
+    return render(request=request, template_name="Employee/employee_attendance.html")
+
+
+def clint(request):
+    return render(request=request, template_name="Employee/clint.html")
+
+
+def timesheet(request):
+    return render(request=request, template_name="Employee/timesheet.html")
+
