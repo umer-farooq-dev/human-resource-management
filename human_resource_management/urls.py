@@ -27,5 +27,6 @@ urlpatterns = [
                   path('employee-attendance/', views.employee_attendance, name="employee-attendance"),
                   path('clint/', views.clint, name="clint"),
                   path('timesheet/', views.timesheet, name="timesheet"),
+                  path('rough/', views.rough, name="rough"),
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL,
                                                                                          document_root=settings.STATIC_ROOT)
