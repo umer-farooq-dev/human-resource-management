@@ -83,7 +83,3 @@ def timesheet(request):
     return render(request=request, template_name="Employee/timesheet.html")
 
 
-
-def rough(request):
-    return render(request=request, template_name="rough.html")
-
